@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+<form th:action="@{/Profile}" th:method="GET" th:name="${loginModel}">
+    <h1>Hello:</h1>
+    <p th:name="userName" th:text="${loginModel.userName}"></p>
+</form>
+</body>
+</html>
